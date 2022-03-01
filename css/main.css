@@ -6,6 +6,9 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+header{
+    border-bottom: 1px solid #dedede;
+}
 .header{
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -33,6 +36,10 @@ body{
     font-weight: 600;
     font-size: 20px;
     color: #443737;
+    transition: all 0.3s ease;
+}
+.header-nav a:hover{
+    color: #FFC725;
 }
 .header-nav a::after{
     content:'';
@@ -52,6 +59,7 @@ body{
     align-items: center;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item{
     position: relative;
@@ -81,6 +89,7 @@ body{
     background-position: center center;
     background-size: cover;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs{
     padding-left: 0;
@@ -88,7 +97,7 @@ body{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
 .breadcrumbs a{
     font-family: 'Open Sans', sans-serif;
@@ -96,10 +105,17 @@ body{
     color: #dedede;
     font-size: 15px;
 }
+.breadcrumbs a:hover{
+    color: #FFC725;
+}
 .breadcrumbs a::before{
     content:'/';
-    left: -7px;
+    left: -3px;
     position: relative;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before{
+    color: #dedede;
 }
 .breadcrumbs li:first-child a::before{
     display: none;
@@ -107,15 +123,71 @@ body{
 .title{
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 .description{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #f9f9f9;
     max-width: 320px;
     margin: 0 auto;
     
+}
+.banner{
+    margin-bottom: 100px;
+}
+.banner-box{
+    background-image:url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.banner-description{
+    width: 329px;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 17px;
+}
+.banner-title span{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    padding: 5px 20px 5px 17px;
+    background-color: #F37335;
+    font-weight: 600;
+    font-size: 14px;
+    width: 59px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.banner-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FAF9F9;
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.banner-link{
+    width: 170px;
+    color: #1E2F40;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #FBB731;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
 }
