@@ -191,3 +191,98 @@ header{
     font-size: 14px;
     border-radius: 5px;
 }
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.menu-title{
+    margin: 0;
+    color: #1B2A49;
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+.menu-select{
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #DEDEDE;
+    border-radius: 22px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px 30px;
+    color: #443737;
+    flex-basis: 279px;
+    appearance: none;
+    background-image:url(../img/arrow.svg);
+    background-size:12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    grid-row-gap:50px;
+    margin-bottom: 100px;
+}
+.menu-grid-cover{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-grid-cover img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu-grid-item{
+    text-align: center;
+}
+.menu-grid-title{
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.menu-grid-price{
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    margin: 0;
+    margin-bottom: 22px;
+}
+.menu-grid-btn{
+    width: 152px;
+    height: 38px;
+    gap: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#FBB731;
+    border: transparent;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.menu-grid-icon img{
+    width: 18px;
+    height: 18px;
+}
+.menu-grid-text{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #1E2F40;
+    padding:0;
+}
+.menu-grid-extra{
+    margin-bottom: 140px;
+}
