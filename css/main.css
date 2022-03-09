@@ -17,6 +17,12 @@ header{
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo{
     display: block;
     background-image: url(../img/logo.svg);
@@ -180,7 +186,7 @@ header{
 .banner-link{
     width: 170px;
     color: #1E2F40;
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 20px;
     text-align: center;
     background-color: #FBB731;
@@ -190,6 +196,11 @@ header{
     font-weight: 700;
     font-size: 14px;
     border-radius: 5px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover{
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header{
     display: flex;
@@ -273,6 +284,9 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
+.menu-grid-btn:hover{
+    background-color: #F37335;
+}
 .menu-grid-icon img{
     width: 18px;
     height: 18px;
@@ -305,20 +319,22 @@ header{
     margin-bottom: 12px;
     margin-top: 0;
 }
-.footer-item li{
+.footer-list li{
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color:#FAF9F9;
     font-weight: 700;
 }
-.footer-item a{
+.footer-list a{
     color: #DEDEDE;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: 400;
     line-height: 24px;
 
+}
+.footer-list a:hover{
+    color: #FBB731;
 }
 .footer-item span{
     color: #DEDEDE;
@@ -329,13 +345,16 @@ header{
 .footer-item ul{
     line-height: 24px;
 }
-.footer-tel{
+.footer-list-tel a{
     color: #FBB731;
     line-height: 38px;
     font-size: 20px;
     font-weight: 900;
 }
-.footer-tel li{
+.footer-list-tel a:hover{
+    color: #dedede;
+}
+.footer-list-tel li{
     margin-bottom: 2px;
 }
 .footer-box{
