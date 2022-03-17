@@ -832,7 +832,7 @@ header{
         right: 0px;
     }
     .content-title span {
-        font-size: 20px;
+        font-size: 17px;
     }
     .promo-left, .promo-right {
         width: 100%;
@@ -855,6 +855,9 @@ header{
     .right img {
         top: -140px;
         width: 55%;
+    }
+    .content-title span {
+        font-size: 14px;
     }
 }
 @media (max-width:360px){
