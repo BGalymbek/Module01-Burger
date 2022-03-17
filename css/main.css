@@ -601,54 +601,10 @@ header{
         display: none;
     }
 }
-@media (max-width:1200px){
-    /* .wrapper{
-        max-width: 1000px;
-    } */
-}
 @media (max-width:1000px){
-    .promo-left, .promo-right {
-        width: 49%;
-    }
-    .wrapper{
+     .container{
         max-width: 738px;
-    }
-    .wrapper-banner{
-        gap: 6px;
-        width: 738px;
-    }
-    .content{
-        margin-top: 42px;
-        margin-bottom: 122px;
-    }
-    .right img {
-        width: 132%;
-        top: 325px;
-        right: -15px;
-    }
-    .right-bg {
-        width: 218px;
-    }
-    .content-title {
-        font-size: 86px;
-       }
-    .content-text {
-        font-size: 16px;
-    }
-    .promo-left {
-        padding: 44px 53px 43px 30px;
-    }
-    .promo-right {
-        padding: 60px 30px;
-        background-position: center center;
-        object-fit: contain;
-    }
-    .promo-description{
-        width: 306px;
-    }
-    .container{
-        max-width: 738px;
-    }
+     }
     .header-logo{
         width: 150px;
         height: 48px;
@@ -696,6 +652,45 @@ header{
     .footer-list + .footer-list-tel{
         display: block;
     }
+    .wrapper{
+        max-width: 738px;
+    }
+    .wrapper-banner{
+        gap: 6px;
+        width: 738px;
+    }
+    .content{
+        margin-top: 42px;
+        margin-bottom: 122px;
+    }
+    .content-title {
+        font-size: 86px;
+    }
+    .content-text {
+        font-size: 16px;
+    }
+    .right img {
+        width: 132%;
+        top: 325px;
+        right: -15px;
+    }
+    .right-bg {
+        width: 218px;
+    }
+    .promo-left, .promo-right {
+        width: 49%;
+    }
+    .promo-left {
+        padding: 44px 53px 43px 30px;
+    }
+    .promo-right {
+        padding: 60px 30px;
+        background-position: center center;
+        object-fit: contain;
+    }
+    .promo-description{
+        width: 306px;
+    }
 }
 
 @media (max-width:765px){
@@ -730,28 +725,28 @@ header{
     .tel .footer-list{
         margin: 0;
     }
-    .wrapper-banner{
-        flex-direction: column;
-        align-items: center;
-        width: 567px;
-    }
     .wrapper{
         flex-direction: column;
         max-width: 567px;
         margin:0 auto;
     }
-    .promo-left, .promo-right {
-        width: 100%;
+    .wrapper-banner{
+        flex-direction: column;
+        align-items: center;
         width: 567px;
+    }
+    .content {
+        width: 80%;
+        padding: 0 15px;
     }
     .right img {
         width: 55%;
         top: -210px;
         right: 0px;
     }
-    .content {
-        width: 80%;
-        padding: 0 15px;
+    .promo-left, .promo-right {
+        width: 100%;
+        width: 567px;
     }
 }
 @media (max-width:567px){
@@ -804,6 +799,9 @@ header{
     .menu-extra .menu-grid-item {
         flex: 0 0 185px;
     }
+    .wrapper{
+        max-width: 414px;
+    }
     .wrapper-banner{
         flex-direction: column;
         width: 414px;
@@ -811,10 +809,7 @@ header{
     }
     .content {
         margin-bottom: 162px;
-        width: 60%;
-    }
-    .right-bg {
-     display: none;
+        width: 62%;
     }
     .content-title {
         font-size: 58px;
@@ -823,16 +818,16 @@ header{
     .content-text {
         font-size: 13px;
     }
-    .wrapper{
-        max-width: 414px;
+    .content-title span {
+        font-size: 17px;
+    }
+    .right-bg {
+     display: none;
     }
     .right img{
         top: -205px;
         width: 50%;
         right: 0px;
-    }
-    .content-title span {
-        font-size: 17px;
     }
     .promo-left, .promo-right {
         width: 100%;
@@ -848,16 +843,16 @@ header{
     .wrapper-banner{
         width: 320px;
     }
-    .promo-description {
-        font-size: 13px;
-        width: 280px;
+    .content-title span {
+        font-size: 14px;
     }
     .right img {
         top: -140px;
         width: 55%;
     }
-    .content-title span {
-        font-size: 14px;
+    .promo-description {
+        font-size: 13px;
+        width: 280px;
     }
 }
 @media (max-width:360px){
